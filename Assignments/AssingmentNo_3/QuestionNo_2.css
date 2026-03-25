@@ -1,0 +1,76 @@
+/* Container & Typography */
+body 
+{ 
+  font-family: sans-serif; 
+  background-color: #dad5d5;
+  text-align: center; 
+  padding: 50px; 
+}
+h2 { 
+  margin-bottom: 40px; 
+  font-size: 34px; 
+  color: #352525; 
+}
+
+/* The Grid Layout */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Space between cards */
+  flex-wrap: wrap;
+}
+
+/* Individual Cards */
+.product-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image Styling */
+.image-container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.image-container img { 
+  max-width: 100%; 
+  max-height: 100%; 
+}
+/* Text & Price */
+h3 { 
+  font-size: 18px;
+   margin: 10px 0; 
+}
+p { 
+  font-size: 14px; 
+  color: #666; 
+  margin-bottom: 15px; 
+}
+.price { 
+  color: #f2711c; 
+  font-weight: bold; 
+  font-size: 18px; 
+  margin-bottom: 15px; 
+}
+
+/* The Button */
+.add-to-cart {
+  background-color: #21ba45;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.add-to-cart:hover { 
+  background-color: #045817; 
+}
