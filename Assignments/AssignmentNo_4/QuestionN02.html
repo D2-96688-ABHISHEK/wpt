@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    function getNumber(msg) {
+      let num;
+
+      while (true) {
+        let input = prompt(msg);
+        if (!isNaN(input) && input !== null) {
+          num = Number(input);
+          return num;
+        }
+        else {
+          alert("Enter a valid Number")
+        }
+      }
+    }
+
+    let msg = prompt("Enter a msg that you wants to print on console");
+    let num = prompt("Enter a number for how many times you want to print a msg ")
+    let i = 1;
+    while (num > 0) {
+      console.log(`${i++} . ${msg}`);
+      num--;
+    }
+    alert("Check the console for repeated messages");
+  </script>
+</body>
+
+</html>

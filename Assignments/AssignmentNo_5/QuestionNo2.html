@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button:hover {
+      background-color: aqua;
+      transform: scale(1.2);
+      color: rgb(0, 0, 0);
+
+    }
+
+    #div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    input {
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="div">
+    <h3><u>Calculator</u></h3>
+    <table border="1" style="padding: 2px; margin:6px;">
+      <tbody>
+        <tr>
+          <td colspan="1"><label>Enter Number 1</label></td>
+          <td colspan="4"><input type="text" id="num1"></td>
+        </tr>
+        <tr>
+          <td colspan="1"><label>Enter Number 2</label></td>
+          <td colspan="4"><input type="text" id="num2"></td>
+        </tr>
+        <tr>
+          <td colspan="1"><label>Result</label></td>
+          <td colspan="4" id="result"></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td rowspan="2"><button onclick="Addition()">Addition</button></td>
+          <td rowspan="2"><button onclick="Substraction()">Substraction</button></td>
+          <td rowspan="2"><button onclick="Multiplication()">Multiplication</button></td>
+          <td rowspan="2"><button onclick="Division()">Division</button></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <script>
+    function Addition() {
+      let add = 0;
+      const num1 = document.getElementById('num1');
+      const num2 = document.getElementById('num2');
+
+      let number1 = parseInt(num1.value);
+      let number2 = parseInt(num2.value);
+
+      add = number1 + number2;
+      const result = document.getElementById('result');
+
+      result.innerHTML = add;
+
+    }
+    function Substraction() {
+      let add = 0;
+      const num1 = document.getElementById('num1');
+      const num2 = document.getElementById('num2');
+
+      let number1 = parseInt(num1.value);
+      let number2 = parseInt(num2.value);
+
+      add = number1 - number2;
+      const result = document.getElementById('result');
+
+      result.innerHTML = add;
+    }
+    function Multiplication() {
+      let add = 0;
+      const num1 = document.getElementById('num1');
+      const num2 = document.getElementById('num2');
+
+      let number1 = parseInt(num1.value);
+      let number2 = parseInt(num2.value);
+
+      add = number1 * number2;
+      const result = document.getElementById('result');
+
+      result.innerHTML = add;
+    }
+    function Division() {
+      let add = 0;
+      const num1 = document.getElementById('num1');
+      const num2 = document.getElementById('num2');
+
+      let number1 = parseInt(num1.value);
+      let number2 = parseInt(num2.value);
+
+      add = number1 / number2;
+      const result = document.getElementById('result');
+
+      result.innerHTML = add;
+    }
+  </script>
+</body>
+
+</html>

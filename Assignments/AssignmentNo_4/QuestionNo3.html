@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    function getNumber(msg) {
+      let num;
+
+      while (true) {
+        let input = prompt(msg);
+        if (!isNaN(input) && input !== null) {
+          num = Number(input);
+          return num;
+        }
+        else {
+          alert("Enter a valid Number")
+        }
+      }
+    }
+
+    let number = getNumber("Enter a number till that number you want to print all even numbers");
+    alert("If you want to check even number then check console");
+
+    let arr = [];
+
+    for (let i = 0; i <= number; i++) {
+      if (i % 2 == 0)
+        arr.push(i);
+    }
+
+    let i = 0;
+    console.log(`Even numbers till ${number} are `);
+    while (i < arr.length) {
+      console.log(arr[i]);
+      i++;
+    }
+  </script>
+</body>
+
+</html>
